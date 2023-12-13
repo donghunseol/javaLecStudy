@@ -1,4 +1,4 @@
-package ex02;
+package ch02;
 
 public class Light {
     public static void main(String[] args) {
