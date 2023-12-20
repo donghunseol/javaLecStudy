@@ -21,7 +21,7 @@ public class GugudanEx01 {
             }
         }
 
-        //입력한 구구단을 출력하라
+        // 입력한 구구단을 출력하라
         System.out.print("출력하고 싶은 구구단의 단을 골라주세요: ");
         Scanner sc = new Scanner(System.in);
         int selectedNum = sc.nextInt();
