@@ -23,4 +23,16 @@ public class ScopeEx01 {
         System.out.println(sc.n1);
         sc.m2();
     }
+    /**
+     * ScopeEx01 (클래스)
+     *
+     * static (n2 = 2), m1(), main) → 클래스명.x
+     * → 어디에서든지 접근 가능하다. (heap 이 static 에 접근 가능)
+     *
+     * heap (n1 = 1, m2())
+     * → heap 끼리는 같은 scope 여서 접근이 가능하다
+     *
+     * stack (n1 = 10)
+     * → 외부 접근 불가능
+     */
 }
