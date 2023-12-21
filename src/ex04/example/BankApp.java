@@ -3,6 +3,7 @@ package ex04.example;
 import ex04.example.model.Account;
 import ex04.example.model.User;
 
+// 객체 지향 프로그래밍
 public class BankApp {
     public static void main(String[] args) {
         // 1. 고객 2명 만들기
@@ -24,5 +25,16 @@ public class BankApp {
         // 5. 이체 (ssar -> love 100원)
         BankService.이체(ssarAccount, loveAccount, amount);
 
+        // 6. 이체 (cos -> love 500원)
+        BankService.이체(cosAccount, loveAccount, amount);
+
+        // 7. 객체 상태 확인
+        System.out.println(ssarAccount);
+        System.out.println(cosAccount);
+        System.out.println(loveAccount);
+
+        // 8. 출금
+        BankService.출금(ssarAccount, amount);
+        BankService.출금(loveAccount, amount);
     }
 }
