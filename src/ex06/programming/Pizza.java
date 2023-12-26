@@ -16,10 +16,12 @@ public class Pizza extends Circle {
         this.name = name;
     }
 
-    public static void main(String[] args) {
-        Pizza obj = new Pizza("Pepperoni", 20);
-
+    public void print() {
+        System.out.println("피자의 종류:" + this.name + ", 피자의 크기:" + super.radius);
     }
 
-
+    public static void main(String[] args) {
+        Pizza obj = new Pizza("Pepperoni", 20);
+        obj.print();
+    }
 }
