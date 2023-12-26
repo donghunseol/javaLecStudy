@@ -19,8 +19,8 @@ class EmployeeTest extends Person {
 
     }
 
-    public EmployeeTest(String name) {
-        super(name);
+    public EmployeeTest(Object name) {
+        super(name.toString());
     }
 
     public EmployeeTest(String name, String id) {
